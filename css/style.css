@@ -1,0 +1,336 @@
+body {
+    /* background: #4b6cb7;   fallback for old browsers */
+    background: white;
+    /* background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #182848, #4b6cb7);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+} 
+
+h1,  a {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    display: block;
+    text-align: center;
+    line-height:.8;
+    color: black;
+}
+.contenido {
+    max-width: 1200px;
+    /* margin: 2rem auto 0 auto; */
+    margin: 2rem auto 0 auto;
+    color: green;
+    font-size: 3rem;
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    font-size: 1.4rem;
+}
+
+
+h2, p {
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.hashtag {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.resultado {
+    margin-top:10rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.centrar-titulo {
+    display: flex;
+    margin-left: 22rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.logo-header {
+    margin-bottom: -7rem;
+}
+
+/* FORM LOGIN */
+.formulario {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.formulario h2 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formulario img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+label {
+    flex: 0 0 10rem;
+}
+
+input{
+    flex: 1;
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    width: 100%;
+}
+
+.boton {
+    color: white;
+    background-color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    max-width: 50%;
+    margin-top: 1rem;
+}
+
+.boton:hover {
+    color: black;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.alerta {
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+
+}
+
+.alerta.error {
+    background-color: red;
+}
+
+.alerta .exito {
+    background-color: green;
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0;
+    background-color: green;
+    max-width: 100%;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.navegacion a:hover {
+    font-size: 2rem;
+}
+
+.titulo {
+    text-transform: uppercase;
+    color: green;
+    margin-top: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.contenedor-imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor-imagen imagen {
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 6px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 6px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 6px 15px 0px rgba(112,112,112,0.54);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+/* Contacto */
+.contact-form{
+    --form-text-color: #333;
+    --for-success-color: green;
+    --form-error-color: #f44336;
+    --form-bg-color: #eee;
+    --form-border-color: #222;
+    --form-pl-color: rgb(2, 177, 40);
+    background-color: var(--for-success-color);
+    /* border: thin solid var(--form-border-color); */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.contact-form > *{
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: var(--form-text-color);
+    caret-color: var(--form-error-color);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.contact-form > *::placeholder{
+    color: var(--form-pl-color);
+}
+
+.contact-form > *[required]:invalid{
+    border: thin solid var(--form-error-color);
+}
+
+.contact-form > *[required]:valid{
+    border: thin solid var(--for-success-color);
+}
+
+.contact-form input[type="submit"]
+{
+    margin-bottom: 0;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+.contact-form input[type="submit"]:hover{
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.contact-form textarea{
+    resize: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.titulo-formulario {
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: green;
+    font-weight: bold;
+}
+
+/* Index */
+.contenido-imagen {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.boton-resultados {
+    color: white;
+    background-color: green;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.boton-resultados:hover {
+    cursor: pointer;
+    color: black;
+    background-color: greenyellow;
+}
+
+span {
+    font-weight: bold;
+}
